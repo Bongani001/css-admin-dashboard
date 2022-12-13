@@ -1,0 +1,69 @@
+html, body {
+    margin: 0px;
+    padding:0px;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+h3 {
+    border: 1px solid black;
+    margin: 0px;
+}
+
+/* HEADER */
+header {
+    border: 1px solid black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-nav {
+    display: flex;
+    gap: 5px
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.right-nav img:nth-child(2) {
+    height: 2rem;
+}
+
+img {
+    height: 1.2rem;
+    border: 1px solid black;
+}
+
+input {
+    height: 1rem
+}
+
+
+
+/* SIDEBAR */
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: rgb(28,148,211);
+    border: 1px solid black;
+}
+
+
+
+/* MAIN-CONTENT */
+main {
+    border: 1px solid black;
+    background-color: rgb(226,233,241);
+
+}
