@@ -16,7 +16,6 @@ h3, h2 {
 
 /* HEADER */
 header {
-    border: 1px solid black;
     padding: 5px 30px;
 }
 
@@ -86,14 +85,12 @@ input {
 .sidebar {
     grid-row: 1 / -1;
     background-color: rgb(28,148,211);
-    border: 1px solid black;
 }
 
 
 
 /* MAIN-CONTENT */
 main {
-    border: 1px solid black;
     background-color: rgb(226,233,241);
 
 
