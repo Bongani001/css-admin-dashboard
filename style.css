@@ -10,6 +10,10 @@ html, body {
     grid-template-rows: 1fr 6fr;
 }
 
+p {
+    margin: 0px;
+}
+
 h3, h2 {
     margin: 0px;
 }
@@ -41,7 +45,7 @@ header {
 .right-nav img:nth-child(2) {
     height: 2rem;
     background-color: rgb(240, 215, 152);
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .hero {
@@ -58,6 +62,7 @@ header {
 
 .right-hero button {
     background-color: rgb(28,148,211);
+    color: #fff;
     border-radius: 10px;
     border-style: none;
     padding: 5px 20px;
@@ -66,7 +71,7 @@ header {
 .left-hero img {
     height: 2.5rem;
     background-color: rgb(240, 215, 152);
-    border-radius: 10px;
+    border-radius: 50%;
     
 }
 
@@ -85,19 +90,93 @@ input {
 .sidebar {
     grid-row: 1 / -1;
     background-color: rgb(28,148,211);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
 }
 
+.site-name, .menu h4, .account-control h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    
+}
 
 
 /* MAIN-CONTENT */
 main {
     background-color: rgb(226,233,241);
-
-
-
-/* 
-Color for border-left on the main content grids
-background-color: rgb(227,176,48);
-*/
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 10px;
+    gap: 10px;
 }
 
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.project {
+    background-color: #fff;
+    border-left: 4px solid rgb(227,176,48);
+    border-radius: 5px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects h3 {
+    padding-left: 10px;
+}
+
+.project h4 {
+    margin: 0px;
+}
+
+.project-control {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.announcements {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.announcements p, .announcements h4 {
+    margin: 0px;
+}
+
+.trending-container {
+    margin-top: 20px;
+}
+
+.trends {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.avatar {
+    display: flex;
+    gap: 10px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+}
